@@ -8,15 +8,19 @@
   <br />
     <h3><p align="center">Stage 4 - Create Your Own Music Feature</p></h3>
   <br />
-<a target="_blank" href="http://spotified-clone.sarahshelley.x10host.com/"><img src="https://github.com/sargef/Spotify-Clone-In-Stages-Hypnotic-Music/blob/master/Step1%20-%20Spotify%20Clone%20-%20Register-Signin-PasswordReset/assets/images/spotifyCover.png"></a>
+<a target="_blank" href="http://spotified-clone.sarahshelley.x10host.com/"><img src="https://github.com/sargef/spotify-clone-in-stages/blob/master/Step%202%20-%20Spotify%20Clone%20-%20Content%20for%20Assets/assets/images/spotifyCover.png"></a>
 
 <br />
 
-<img src="https://github.com/sargef/Spotify-Clone-In-Stages-Hypnotic-Music/blob/master/Step%202%20-%20Spotify%20Clone%20-%20Content%20for%20Assets/assets/images/2ndStage.png">
+<img src="https://github.com/sargef/spotify-clone-in-stages/blob/master/Step%202%20-%20Spotify%20Clone%20-%20Content%20for%20Assets/assets/images/2ndStage.png">
 
 <br />
 
-<img src="https://github.com/sargef/Spotify-Clone-In-Stages-Hypnotic-Music/blob/master/Step%202%20-%20Spotify%20Clone%20-%20Content%20for%20Assets/assets/images/Cover2nd.png">
+<img src="https://github.com/sargef/spotify-clone-in-stages/blob/master/Step%202%20-%20Spotify%20Clone%20-%20Content%20for%20Assets/assets/images/Cover2nd.png">
+
+<br />
+
+<img src="https://github.com/sargef/spotify-clone-in-stages/blob/master/Step%202%20-%20Spotify%20Clone%20-%20Content%20for%20Assets/assets/images/Cover2nd.png">
 
 <br />
 
