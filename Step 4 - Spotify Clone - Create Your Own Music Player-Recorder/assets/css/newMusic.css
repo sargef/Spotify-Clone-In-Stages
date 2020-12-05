@@ -1,0 +1,919 @@
+#nowPlayingBarContainer {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  #nowPlayingBarContainer {
+    max-width: 15% !important;
+  }
+}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+}
+
+header h1 {
+  margin: 10px 0;
+  width: 100%;
+  font-size: 40px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+
+}
+
+#bar1 {
+  display: inline-block;
+  position: absolute;
+  height: 100px;
+  width: 50%;
+  overflow: hidden;
+  align-items: center;
+  margin-right: 0%;
+  margin-left: 40%;
+  margin-top: 10px;
+  text-align: center;
+  /* visibility: hidden; */
+}
+
+#bar2 {
+  display: inline-block;
+  height: 100px;
+  width: 50%;
+  margin-left: 10%;
+  overflow: hidden;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+  /* visibility: hidden; */
+}
+
+.bar-dance {
+  background: rgb(225, 240, 27);
+  border: 3px solid rgb(179, 6, 6);
+  display: inline-block;
+  /* border-radius: 30px; */
+  width: 10px;
+  height: inherit;
+  max-height: 50%;
+  animation: dance .8s infinite;
+}
+
+.bar-dance:nth-child(1) {
+    animation-delay: -.7s;
+    height: 20px;
+}
+
+.bar-dance:nth-child(2) {
+  animation-delay: -.6s;
+  height: 40px;
+}
+
+.bar-dance:nth-child(3) {
+  animation-delay: -.1s;
+  height: 70px;
+}
+
+.bar-dance:nth-child(4) {
+  animation-delay: -.4s;
+  height: 40px;
+}
+
+.bar-dance:nth-child(5) {
+  animation-delay: -.3s;
+  height: 20px;
+}
+
+@keyframes dance {
+  0%, 100% {
+    transform: none;
+  }
+  
+  50% {
+    transform: translateY(50%);
+  }
+}
+
+
+#box {
+  background-image: url("http://www.mille-soeren.dk/10_Baggrunde_Bar/Black_blinking_stars.gif");
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  height: 68%;
+  /* min-height: 112%; */
+  box-shadow: 2px 2px 5px black;
+  padding-top: 95px;
+  /* margin-bottom: -500px !important; */
+}
+
+
+#p1 {
+  background: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 3em;
+  margin-top: 0px;
+  margin-left: 275px;
+  box-shadow: 15px -10px 20px black inset;
+}
+
+#p2 {
+  background: rgb(2, 225, 225);
+  height: 50px;
+  width: 50px;
+  border-radius: 3em;
+  margin-top: 10px;
+  margin-left: 575px;
+  box-shadow: 20px -20px 30px black inset;
+}
+
+#p2m {
+  background: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 3em;
+  margin-top: 0px;
+  margin-left: 555px;
+  box-shadow: 5px -4px 6px black inset;
+}
+
+#p3 {
+  background: rgb(25, 225, 0);
+  height: 80px;
+  width: 80px;
+  border-radius: 3em;
+  margin-top: 0px;
+  margin-left: 755px;
+  box-shadow: -15px 10px 20px black inset;
+}
+
+#star1 {
+  background-image: url("http://www.netanimations.net/Moving-picture-flashing-pulsing-twinkling-star-animated-gif.gif");
+  width: 88px;
+  height: 88px;
+  border-radius: 2em;
+  margin-left: 80%;
+  margin-top: 25px;
+}
+
+#star2 {
+  background-image: url("http://www.netanimations.net/Moving-picture-flashing-pulsing-twinkling-star-animated-gif.gif");
+  background-size: 100% 100%;
+  width: 50px;
+  height: 40px;
+  border-radius: 0em;
+  margin-left: 30px;
+}
+
+#star3 {
+  background-image: url("http://www.deepmetaphysics.com/wp-content/uploads/2012/06/pulseStar.gif");
+  background-size: 100% 100%;
+  width: 40px;
+  height: 90px;
+  border-radius: 1em;
+  margin-left: 180px;
+}
+
+.muzieknootjes {
+  display: flex;
+  z-index: 2;
+  color: rgb(95, 94, 94);
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  min-width: 300px;
+  height: 68%;
+  border: 0px solid #000;
+}
+
+.dancing-img {
+    position: absolute;
+    left: 85%;
+    top: 30%;
+    height: 350px;
+    float: right;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4,
+.noot-5,
+.noot-6,
+.noot-7,
+.noot-8,
+.noot-9,
+.noot-10
+{
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+
+.noot-1 {
+  top: 60px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: 60px;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.noot-3 {
+  top: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 40px;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+.noot-5 {
+  top: 690px;
+  left: 40%;
+  animation-delay: 1.5s;
+}
+
+.noot-6 {
+  top: 440px;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+.noot-7 {
+  top: 740px;
+  left: 10%;
+  animation-delay: 2s;
+}
+
+.noot-8 {
+  top: 340px;
+  left: 80%;
+  animation-delay: 2s;
+}
+
+.noot-9 {
+  top: 440px;
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.noot-10 {
+  top: 540px;
+  left: 60%;
+  animation-delay: 2s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
+
+
+
+i,
+svg {
+  pointer-events: none;
+}
+
+
+.clap-pad,
+.kick-pad,
+.snare-pad,
+.tom-pad,
+.hihat-pad,
+.cowbell-pad {
+  width: 6vh;
+  height: 6vh;
+  margin: 0rem 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.song-pad {
+  width: 6vh;
+  height: 6vh;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.long {
+  width: 75vh;
+  height: 8vh;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 1440px) {
+  .long {
+    width: 65vh;
+  }
+}
+
+.long h1 {
+  padding: 0 0;
+  color: rgb(73, 72, 72);
+  font-family: "Helvetica-neue", helvetica, arial, sans-serif;
+  font-weight: 900;
+}
+
+.long h1::before {
+  content: 'Add Track To Mix';
+}
+
+.song-pad.active h1::before {
+  content: 'Click Mute to Stop Track';
+}
+
+.song-pad.active h1 {
+  color: white;
+  content: 'Stop Track';
+}
+
+.song-pad, .clap-pad, .kick-pad, .snare-pad, .tom-pad, .hihat-pad, .cowbell-pad {
+  -webkit-transition: 0.2s;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  background: #ccc;
+  -webkit-box-shadow: inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.20), /* Inner edge highlights */ inset 0 -20px 5px rgba(0,0,0,0.15), inset 5px -10px 5px rgba(0,0,0,0.15), inset -5px -10px 5px rgba(0,0,0,0.15), /* Light source above */ inset 0 15px 20px #fff, inset 0 -15px 30px #999, /* Gradients */ 0 2px 1px #fff;
+}
+
+.clap-pad.active, .kick-pad.active, .snare-pad.active, .tom-pad.active, .hihat-pad.active, .cowbell-pad.active {
+  -webkit-box-shadow: inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.20), inset 5px -10px 5px rgba(0,0,0,0.15);
+  background-repeat: no-repeat;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+}
+
+.song-pad.active {
+  background: rgb(80, 2, 69);
+  -webkit-box-shadow: inset 0 -1px 3px rgba(255,255,255,0.50), inset 0 2px 3px rgba(0,0,0,0.20), inset 5px -10px 5px rgba(0,0,0,0.15);
+  background-image: linear-gradient(to right, #9b026d 0%, #e2e611 20%, #f58326 40%, #9b027a 100%);
+  background-repeat: no-repeat;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+}
+
+.clap-pad.active {
+  background:#69024a;
+  background-image: linear-gradient(to right, #9b026d 0%, #9b026d 20%, #9b026d 40%, #9b026d 100%);
+
+}
+
+.kick-pad.active {
+  background: rgb(236, 135, 20);
+  background-image: linear-gradient(to right, rgb(236, 160, 19) 0%, rgb(236, 160, 19) 20%, rgb(236, 160, 19) 40%, rgb(236, 160, 19) 100%);
+}
+
+.snare-pad.active {
+  background: rgb(177, 174, 3);
+  background-image: linear-gradient(to right, rgb(214, 236, 19) 0%,rgb(214, 236, 19) 20%, rgb(214, 236, 19) 40%, rgb(214, 236, 19) 100%);
+}
+
+.tom-pad.active {
+  background:rgb(52, 112, 241);
+  background-image: linear-gradient(to right, rgb(93, 142, 247) 0%,rgb(93, 142, 247) 20%, rgb(93, 142, 247) 40%, rgb(93, 142, 247) 100%);
+}
+
+.hihat-pad.active {
+  background:rgb(99, 26, 168);
+  background-image: linear-gradient(to right, rgb(137, 42, 226) 0%,rgb(137, 42, 226) 20%, rgb(137, 42, 226) 40%, rgb(137, 42, 226) 100%);
+}
+
+.cowbell-pad.active {
+  background: rgb(33, 235, 15);
+  background-image: linear-gradient(to right, rgb(91, 248, 77) 0%,rgb(91, 248, 77) 20%, rgb(91, 248, 77) 40%, rgb(91, 248, 77) 100%);
+}
+
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  
+  100% {
+    background-position: 468px 0; 
+  }
+}
+
+.sequencer {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 2;
+  min-height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2.5%;
+  /* margin-top: -85px; */
+  /* border: 1px solid #fff;
+  border-style: groove;
+  border-color: #fff;
+  border-width: 37px; */
+}
+
+.center h2 {
+  display: absolute;
+  margin-top: -50px;
+}
+
+h2 {
+color: white;
+grid-column: 1/2;
+font-size: 1.5vw; 
+/* margin-top: -120px; */
+
+padding-bottom: 10px;
+/* margin-left: 370px; */
+}
+
+.song-track,
+.clap-track,
+.kick-track,
+.snare-track,
+.tom-track,
+.hihat-track,
+.cowbell-track {
+  display: flex;
+  align-items: center;
+  /* min-width: 70%;
+  max-width: 90%; */
+  /* justify-content: space-between; */
+  margin-top: auto;
+  height: 0px;
+  max-height: 0px;
+
+
+}
+
+.song,
+.clap,
+.kick,
+.snare,
+.tom,
+.hihat,
+.cowbell {
+  display: flex;
+  margin-left: -50px;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  background: rgb(122, 122, 122);
+  color: white;
+  /* height: 6vh; */
+  width: 6vh;
+  font-size: 1vw;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 1rem;
+}
+
+.controls select {
+  background: rgb(93, 93, 93);
+  color: white;
+  border: none;
+  padding: 0.3rem 0.8rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 30% 10% 20% 10% 30%;
+  margin: 3rem 2rem;
+  margin-right: 30%;
+  min-width: 20vw;
+  max-width: 30vw;
+  align-items: center;
+}
+
+.container-for-side {
+position: absolute;
+left: 0px;
+top: 105px;
+background-color: rgba(34, 34, 33, 0.8);
+border-right: 1px solid rgba(111,111,111, 0.5);
+z-index: -1;
+height: 113%;
+width: 700px;
+}
+
+.controls button {
+  grid-column: 3/4;
+}
+
+.controls h1 {
+  grid-column: 1/2;
+  font-size: 1.5vw;
+  margin-top: -120px;
+}
+
+.controls:nth-child(1) h1 {
+  position: inline-block;
+  padding-bottom: 10px;
+  margin-left: 370px;
+}
+
+
+.controls select {
+  grid-column: 5/6;
+  font-size: 0.6vw;
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.plays,
+.plays2,
+.plays3,
+.plays4 {
+  padding: 1rem 2rem;
+  margin: 30px 20px;
+
+  font-size: 1.5rem;
+  background: rgb(122, 122, 122);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.mute {
+  margin-left: 5px;
+}
+
+.mute.active {
+  background: rgb(70, 70, 70);
+}
+
+.select {
+  margin-left: 30px;
+  width: 180px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.tempo {
+  width: 20%;
+  margin-top: 1.5%;
+  margin-right: 100px;
+}
+
+.tempo-slider {
+  -webkit-appearance: none;
+  padding: 0.2rem;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  background: rgb(122, 122, 122);
+  border-radius: 1rem;
+}
+
+.tempo-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  margin-bottom: auto;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  background: white;
+  cursor: pointer;
+}
+
+.tempo p {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.play-and-tempo {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@keyframes playTrack {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(1.2);
+  }
+}
+
+
+
+
+
+button #record, button #stop, button #play,  button #save {
+display: absolute;
+z-index: 102;
+}
+
+#action {
+display: absolute;
+
+}
+
+#stop {
+display: absolute;
+
+}
+
+.center {
+  text-align: center;
+}
+
+.playingBarContainer {
+  background-color: #282828;
+  bottom: 0;
+  width: 85%;
+  min-width: 85%;
+  display: flex;
+  position: absolute;
+  z-index: 101;
+  height: 90px;
+  padding: 16px;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+}
+
+.load-track-wrapper{
+  /* background-color: pink; */
+  z-index: 999;
+  display: inline-block;
+  max-width: 450px;
+  max-height: 50px;
+  vertical-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-bottom: 2%;
+  position: absolute;
+  margin-left: 61% !important;
+  margin-top: -150px;
+  border-radius: 20px; 
+}
+
+
+.shaped,
+.available-tracks {
+  min-height: 30px;
+  width: 160px;
+  color: rgb(8, 8, 8);
+  border-radius: 20px;
+  background-color: #dbdbdb;
+  /* text-align: center; */
+  padding: 3%;
+}
+
+.available-tracks {
+  margin-bottom: 5%;
+  margin-top: -6% !important;
+  color: black;
+}
+
+.delete-track.hidden {
+  display: none;
+}
+
+.load-track.hidden {
+  display: none;
+}
+
+.save-track {
+  display: none;
+}
+
+.save-track.visible {
+  display: block;
+}
+
+.save-track-inputs.hidden {
+  display: none;
+}
+
+.available-tracks option {
+  color: black;
+}
+
+.track-name {
+  color: black;
+}
+
+.track-name::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(65, 64, 64);
+  opacity: 1; /* Firefox */
+}
+
+.track-name:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(65, 64, 64);
+}
+
+.track-name::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(65, 64, 64);
+}
+
+.load-track {
+  margin-right: 15px;
+}
+
+.load-track-buttons {
+  /* background-color: yellow; */
+  z-index: 999;
+  display: inline-block;
+  max-width: 350px;
+  position: absolute;
+  margin-left: 75% !important;
+  margin-top: -130px; 
+}
+
+
+.playert {
+  display: block;
+  position: absolute;
+  margin-right: 80%;
+  margin-bottom: 720px;
+}
+
+.newMusicVolume {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+
+.volumet {
+  position: absolute;
+  left: 70px;
+  /* bottom: 10px; */
+  margin: 0 auto;
+  height: 5px;
+  width: 180px;
+  background: #555;
+  border-radius: 15px;
+  margin-top: -30px;
+}
+.volumet {
+  height: 5px;
+  z-index: 109;
+  width: 300px;
+  position: absolute;
+  background: #555;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.volumet .ui-slider-range-min {
+  height: 5px;
+  width: 300px;
+  position: absolute;
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+.volumet .ui-slider-handle {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #fff;
+  position: absolute;
+  margin-left: -8px;
+  margin-top: -8px;
+  cursor: pointer;
+  outline: none;
+}
+
+#recordingsList {
+  display: flex;
+  flex-direction: column;
+  position: block;
+  width: 150px;
+  max-width: 150px;
+  height: auto;
+}
+
+#divFileInput {
+  position: absolute;
+  height: 20px;
+  width: 300px;
+  background-color: rgb(122, 122, 122);
+  border-radius: 5px;
+  z-index: 999;
+  margin-left: 230px;
+}
+
+#fileBtn {
+  position: absolute;
+  margin-left: 505px;
+  margin-top: 10px;
+}
+
+#fileBtn:hover {
+  background-color: rgba(255,255,255,0.50);
+}
+
+#fileBtn:active {
+  background-color: rgba(95, 93, 93, 0.5);
+  color: black;
+  border-color: black;
+  background: rgb(219,23,21);
+  background: linear-gradient(90deg, rgba(219,23,21,1) 0%, rgba(240,198,27,1) 26%, rgba(234,238,58,1) 44%, rgba(33,249,61,1) 60%, rgba(226,29,221,1) 78%, rgba(24,31,218,1) 100%);
+}
+
+#trackForDownload {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background-color: rgba(122, 32, 32, 0.5);
+  z-index: 999;
+}
+
+
+@media (max-width: 1440px) {
+  #divFileInput {
+    margin-left: 140px;
+  }
+  #fileBtn {
+    margin-left: 370px;
+  }
+  .load-track-wrapper {
+      margin-left: 56% !important;
+  }
+  .load-track-buttons {
+      margin-left: 71% !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .load-track-wrapper {
+      margin-left: 46% !important;
+  }
+  .load-track-buttons {
+      margin-left: 61% !important;
+  }
+  #divFileInput {
+    margin-left: 100px;
+  }
+  #fileBtn {
+    margin-left: -40px;
+    margin-top: -30px;
+  }
+}
+
+
+
+
+
+
+

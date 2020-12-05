@@ -1,0 +1,269 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+#background {
+    background-color: #000;
+    background-image: url('../images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    /* max-height: 100%;
+    max-width: 100%; */
+    width: 100%;
+    min-height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+}
+.shadow-box {
+    display: inline-block;
+    position: absolute;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    vertical-align: middle;
+    width: 92.5%;
+    max-width: 92.5%;
+    height: 82.5%;
+    max-height: 82.5%;
+    /* UI Properties */
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    box-shadow: 3px 3px 60px #744A4A;
+    mix-blend-mode: color-burn;
+    opacity: 1;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #background {
+        background-color: #000;
+        background-image: url('../images/background.jpeg');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;        
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        vertical-align: middle;
+    }
+    .shadow-box {
+         display: none;
+    }
+    @media only screen and (max-width: 768px) {
+        #background {
+            height: auto;
+        }
+    }
+ }
+
+
+#loginContainer * {
+    color: #fff;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-weight: normal;
+    line-height: 1em;
+    box-sizing: border-box;
+}
+
+#loginContainer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 80%;
+    height: auto;
+    background-color: rgba(238,238,238,0.1);
+    background-color: rgba(128,0,128, 0.3);	
+    /* background-color: rgba(255,255,0, 0.15); */
+    border-radius: 150px;
+}
+
+#inputContainer {
+    width: 400px;
+    padding: 45px;
+    float: left;
+    border-right: 1px solid #fff;
+}
+
+#inputContainer h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.swal-styling {
+    margin: 0px;
+    font-size: 16px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+    margin-bottom: 28px;
+    border: 1px solid #07d159;
+    font-family: Helvetica, sans-serif;
+    color: white;
+  }
+
+#registerForm,
+#loginForm,
+#passwordReseted,
+#notReseted,
+#passwordSuccess,
+#passwordNoSuccess {
+    display: none;
+}
+
+.returnLogin a {
+    text-decoration: none;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+    display:block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+    font-size: 17px;
+}
+
+#inputContainer label {
+    color: #fff;
+    font-size: 17px;
+    margin-top: 15px;
+    display: block;
+}
+
+#inputContainer button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color: #fff;
+    display: block;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 41px;
+    width: 100%;
+}
+
+#inputContainer button:hover {
+    cursor: pointer;
+}
+
+.hasAccountText span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.hasAccountText {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#back {
+    cursor: pointer;
+}
+
+#loginText {
+    padding: 45px;
+    display: table-cell;
+}
+
+#loginText h1 {
+    color: #07d159;
+    font-size: 60px;
+    font-weight: bold;
+}
+#loginText h2 {
+    margin: 35px 0;
+}
+
+#loginText ul {
+    padding: 0;
+}
+
+#loginText ul li {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 13 45px;
+    background: url("data:image/png;base64,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") no-repeat;
+}
+
+#inputContainer .errorMessage {
+    color: #07d159;
+    font-size: 15px;
+    display: block;
+}
+
+#inputContainer .error {
+    color: #07d159;
+    font-size: 15px;
+    display: block;
+}
+
+ ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgb(238, 200, 238);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:     rgb(238, 200, 238);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:     rgb(238, 200, 238);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:     rgb(238, 200, 238);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:     rgb(238, 200, 238);
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:     rgb(238, 200, 238);
+} 
+
+footer {
+    background-color: black;
+    height: 25px;
+    width: 100%;
+    text-align: right;
+}
+
+footer a {
+    color: white;
+    padding: 8px 8px;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-weight: normal;
+    padding-top: 8px;
+    line-height: 1em;
+    margin: 10 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    #background {
+        height: auto;
+    }
+    #inputContainer {
+        border-right: none;
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    #loginContainer {
+        width: 95%;
+        max-width: 95%;
+    }
+}

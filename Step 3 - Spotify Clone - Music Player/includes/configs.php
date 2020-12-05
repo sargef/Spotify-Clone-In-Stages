@@ -1,0 +1,10 @@
+<?php
+
+define('SMTP_HOST', 'SMTP.YOURHOST');
+define('SMTP_USER', 'YOUR EMAIL ADDRESS');
+define('SMTP_PASS', 'YOUR EMAIL PASSWORD');
+define('SMTP_PORT', '587');
+define('SMTP_SET_FROM', 'YOUR EMAIL ADDRESS');
+define('SMTP_NO_REPLY', 'YOUR EMAIL ADDRESS');
+
+define('SHOW_ERROR_DETAIL', false);
