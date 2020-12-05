@@ -1,4 +1,4 @@
-<h1><b><p align="center">Spotify Clone</p></h1>
+<h1><b><p align="center">Spotify Clone and Create Your Own Music Feature</p></h1>
   <br />
   <h3><p align="center">Stage 1 - Create Login/Register/Reset Password</p></h3>
   <br />
