@@ -36,31 +36,6 @@ include("includes/includedFiles.php");
     </div>
 </div>
 
-
-<?php
-// include("./includes/config.php");
-
-
-if(isset($_POST['playlistId']) && isset($_POST['songId'])) {
-	$playlistId = $_POST['playlistId'];
-	$songId = $_POST['songId'];
-
-	$orderIdQuery = mysqli_query($con, "SELECT IFNULL(MAX(playlistOrder) + 1, 1) as playlistOrder FROM playlistSongs WHERE playlistId='$playlistId'");
-	$row = mysqli_fetch_array($orderIdQuery);
-	$order = $row['playlistOrder'];
-
-	$query = mysqli_query($con, "INSERT INTO playlistSongs VALUES(NULL, '$songId', '$playlistId', '$order')");
-
-}
-else {
-	echo "PlaylistId or songId was not passed into addToPlaylist.php";
-}
-
-?>
-
-<!--  -->
-        
-
           <div id="box">
             <div id="star1"></div>
             <div id="sun" title="Sun *Star*"></div>
