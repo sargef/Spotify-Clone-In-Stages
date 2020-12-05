@@ -3,10 +3,7 @@
   <h3><p align="center">Stage 1 - Create Login/Register/Reset Password</p></h3>
   <br />
  
-
-<img src="https://github.com/sargef/spotify-clone-in-stages/blob/master/Step%202%20-%20Spotify%20Clone%20-%20Content%20for%20Assets/assets/images/Cover2nd.png">
-
-<br />
+<a target="_blank" href="http://spotified-clone.sarahshelley.x10host.com/"><img src="https://github.com/sargef/spotify-clone-in-stages/blob/master/Step%202%20-%20Spotify%20Clone%20-%20Content%20for%20Assets/assets/images/spotifyCover.png"></a>
 
 
 
